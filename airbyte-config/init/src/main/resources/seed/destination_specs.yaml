@@ -1162,7 +1162,7 @@
     - "overwrite"
     - "append"
     supportsNamespaces: true
-- dockerImage: "airbyte/destination-gcs:0.1.21"
+- dockerImage: "airbyte/destination-gcs:0.1.22"
   spec:
     documentationUrl: "https://docs.airbyte.io/integrations/destinations/gcs"
     connectionSpecification:

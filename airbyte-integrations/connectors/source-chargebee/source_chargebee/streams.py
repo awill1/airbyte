@@ -115,7 +115,7 @@ class SemiIncrementalChargebeeStream(ChargebeeStream):
         # Convert `start_date` to timestamp(UTC).
         self._start_date = pendulum.parse(start_date).int_timestamp if start_date else None
 
-    def get_starting_point(self, stream_state: Mapping[str, Any], item_id: str) -> str:
+    def get_starting_point(self, stream_state: Mapping[str, Any], item_id: str) -> int:
         start_point = self._start_date
 
         if stream_state and stream_state.get(item_id, {}).get(self.cursor_field):
